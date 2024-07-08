@@ -7,10 +7,10 @@ import Review from './Review';
 import Plans from './Plans';
 import Contact from './Contact';
 import '../Styles/home.css'
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function Home() {
-    const history = useHistory();
+    const history = useNavigate();
     return (
         <>
             <div className="bgImageCard">

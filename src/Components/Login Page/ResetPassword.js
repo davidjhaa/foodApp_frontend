@@ -1,12 +1,12 @@
 import axios from 'axios';
 import React, { useState } from 'react';
-import { useHistory , useParams} from 'react-router-dom';
+import { useNavigate , useParams} from 'react-router-dom';
 import '../Styles/login.css'
 const apiUrl = process.env.REACT_APP_API_URL;
 
 
 function ResetPassword() {
-    const history = useHistory();
+    const history = useNavigate();
     const [password, setPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
     const { token } = useParams();

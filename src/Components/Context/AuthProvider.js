@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import axios from 'axios';
-import { useHistory } from 'react-router';
+import { useNavigate } from 'react-router';
 const apiUrl = process.env.REACT_APP_API_URL;
 
 
@@ -11,7 +11,7 @@ export function useAuth() {
 }
 
 function AuthProvider({ children }) {
-    const history = useHistory();
+    const history = useNavigate();
     const [user, setUser] = useState("");
     const [loading, setLoading] = useState(false);
 

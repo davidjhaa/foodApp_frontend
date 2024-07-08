@@ -1,12 +1,12 @@
 import React, { useState, useEffect} from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import '../Styles/profile.css';
 import axios from 'axios';
 const apiUrl = process.env.REACT_APP_API_URL;
  
 
 function Profile() {
-    const history = useHistory();
+    const history = useNavigate();
     const [user, setUser] = useState('');
     const [password, setPassword] = useState()
     const [confirmPassword, setConfirmPassword] = useState("")
