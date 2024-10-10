@@ -35,7 +35,7 @@ function AuthProvider({ children }) {
     async function login(email, password) {
         try {
             console.log('before')
-            const response = await axios.post('http://localhost:3001/auth/login', 
+            const response = await axios.post(`${apiUrl}/auth/login`, 
                 { email, password }, 
                 { withCredentials: true } 
             );
@@ -59,7 +59,7 @@ function AuthProvider({ children }) {
     
     async function logout() {
         try {
-            await axios.get(`http://localhost:3001/user/logout`, { withCredentials: true });
+            await axios.get(`${apiUrl}/user/logout`, { withCredentials: true });
             
             localStorage.clear();
             
