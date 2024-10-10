@@ -2,19 +2,11 @@
   "name": "foodapp",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts --openssl-legacy-provider build"
+  },
   "dependencies": {
-    "@emotion/react": "^11.13.3",
-    "@emotion/styled": "^11.13.0",
-    "@fortawesome/fontawesome-svg-core": "^6.6.0",
-    "@fortawesome/free-brands-svg-icons": "^6.6.0",
-    "@fortawesome/free-regular-svg-icons": "^6.6.0",
-    "@fortawesome/free-solid-svg-icons": "^6.6.0",
-    "@fortawesome/react-fontawesome": "^0.2.2",
-    "@mui/icons-material": "^6.1.2",
-    "@mui/material": "^6.1.2",
-    "@testing-library/jest-dom": "^6.5.0",
-    "@testing-library/react": "^16.0.1",
-    "@testing-library/user-event": "^14.5.2",
     "axios": "^1.7.7",
     "core-js": "^3.38.1",
     "dotenv": "^16.4.5",
@@ -25,17 +17,7 @@
     "react-router-dom": "^6.26.2",
     "react-scripts": "5.0.1",
     "recoil": "^0.7.7",
-    "redux": "^5.0.1",
-    "redux-devtools-extension": "^2.13.9",
-    "web-vitals": "^4.2.3"
-  },
-  "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "react-scripts --openssl-legacy-provider start",
-    "build": "react-scripts --openssl-legacy-provider build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "redux": "^5.0.1"
   },
   "eslintConfig": {
     "extends": [
@@ -43,30 +25,6 @@
       "react-app/jest"
     ]
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "gh-pages": "^6.1.1"
-  },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Shreya-0999/Food_App.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Shreya-0999/Food_App/issues"
-  }
+  "main": "index.js"
 }
