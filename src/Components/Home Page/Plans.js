@@ -38,8 +38,7 @@ function Plans() {
                                 <div className='price'>Rs {ele.price}</div>
                                 <div className="duration">/month</div>
                             </div>
-                            <p className="point">That’s only ₹{(ele.price / 30)} per meal</p>
-                        </div>
+                            <p className="point">That’s only ₹{(ele.price / 30).toFixed(2)} per meal</p>                            </div>
 
                         <div className='pCard2'>
                             <div className='ppoints'>

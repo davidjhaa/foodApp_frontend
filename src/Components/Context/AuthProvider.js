@@ -45,8 +45,6 @@ function AuthProvider({ children }) {
                 const name = response.data.name;
                 const capitalizedName = name.charAt(0).toUpperCase() + name.slice(1);
                 localStorage.setItem("user", capitalizedName);
-                // localStorage.setItem("token", response.data.token);
-                // localStorage.setItem("userId", response.data.userId);
                 setUser(capitalizedName);        
                 navigate("/");  
             } else {
