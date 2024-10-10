@@ -13,6 +13,10 @@ function NavBar() {
     }
   }, [setUser]);
 
+  const handleLogout = async () => {
+    await logout(); 
+  };
+
   return (
     <nav>
       <div className="menu">
@@ -30,9 +34,9 @@ function NavBar() {
                 <Link to="/profilePage">{user}</Link>
               </li>
               <li>
-                <Link to="/login" onClick={logout}>
+              <span onClick={handleLogout}>
                   Logout
-                </Link>
+                </span>
               </li>
             </>
           ) : (
