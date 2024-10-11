@@ -6,15 +6,18 @@ import "../Styles/nav.css";
 
 function NavBar() {
   const { user, setUser, logout } = useAuth();
+
   useEffect(() => {
     const storedUser = localStorage.getItem("user");
-    if (storedUser) {
-      setUser(storedUser);
-    }
   }, [setUser]);
 
   const handleLogout = async () => {
-    await logout(); 
+    try {
+      await logout();  
+    } 
+    catch (error) {
+      console.error("Logout failed", error);
+    }
   };
 
   return (
@@ -29,14 +32,11 @@ function NavBar() {
           </li>
           {user ? (
             <>
-              {console.log("current user", user)}
               <li>
-                <Link to="/profilePage">{user}</Link>
+                <Link to="/profilePage">{user.name || "Profile"}</Link> 
               </li>
               <li>
-              <span onClick={handleLogout}>
-                  Logout
-                </span>
+                <button className="logoutBtn" onClick={handleLogout}>Logout</button> 
               </li>
             </>
           ) : (
@@ -51,6 +51,4 @@ function NavBar() {
 }
 
 export default NavBar;
-
-
 

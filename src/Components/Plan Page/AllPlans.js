@@ -9,24 +9,23 @@ const apiUrl = process.env.REACT_APP_API_URL;
 function AllPlans() {
     const [arr, setArr] = useState([]);
 
-    const allPlans = async () =>{
-        try {
-            const response = await axios.get(`${apiUrl}/plans/allPlans`);
-            console.log(response.data.plans);
-            setArr(response.data.plans);
-        } catch (err) {
-            console.log(err);
-        }
-    }
-
     useEffect( () => {
+        const allPlans = async () =>{
+            try {
+                const response = await axios.get(`${apiUrl}/plans/allPlans`);
+                console.log(response.data.plans);
+                setArr(response.data.plans);
+            } catch (err) {
+                console.log(err);
+            }
+        }
         allPlans();
     }, [])
 
     return (
         <div className='allplansCard'>
             <div className='h1Box'>
-                <h1 className='h1'>START EATING HEALTHY TODAY</h1>
+                <h1 className='plan-heading'>START EATING HEALTHY TODAY</h1>
                 <div className="line"></div>
             </div>
             <div className='allplanDetails'>
@@ -39,7 +38,7 @@ function AllPlans() {
                                     <div className='price'>Rs {ele.price}</div>
                                     <div className="duration">/month</div>
                                 </div>
-                                <p className="point">That’s only ₹{(ele.price / 30)} per meal</p>
+                                <p className="point">That’s only ₹{(ele.price / 30).toFixed(2)} per meal</p>
                             </div>
 
                             <div className='pCard2'>

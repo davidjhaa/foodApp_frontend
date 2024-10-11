@@ -17,17 +17,13 @@ function PlanDetail() {
     console.log(id);
 
     const reviews = async () => {
-        console.log("inside useeffect");
-        const data = await axios.get(`${apiUrl}/plans/plan/`+id)
+        const data = await axios.get(`${apiUrl}/plans/plan/${id}`)
         console.log(data,565785765);
         delete data.data.data["_id"]
         delete data.data.data["__v"]
         setplan(data.data.data)
         const reviews = await axios.get(`${apiUrl}/review/`+id);
-        // console.log(reviews);
-        console.log(reviews.data.data);
         setarr(reviews.data.data)
-        // console.log(arr);
     }
 
     useEffect( () => {
@@ -37,8 +33,6 @@ function PlanDetail() {
     function capitalizeFirstLetter(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
-    console.log(rate);
-    // console.log("user ",user);
     const handleClick = async () => {
         console.log(123645);
         const data = await axios.post(`${apiUrl}/review/crud/`+id, {

@@ -9,13 +9,9 @@ function ForgetPassword() {
 
     const handleForgetPassword=async()=>{
         try{
-            const port = window.location.port || (window.location.protocol === 'https:' ? '443' : '80');
+            // const port = window.location.port || (window.location.protocol === 'https:' ? '443' : '80');
             const response = await axios.post(`${apiUrl}/user/forgetpassword`, {
                 email: email,
-            }, {
-                headers: {
-                    'X-Frontend-Port': port
-                }
             });
             if(response.status >= 200 && response.status < 300){ 
                 setAlert("please check ur mail !");

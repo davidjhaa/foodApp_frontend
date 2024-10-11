@@ -7,18 +7,6 @@ function Footer() {
         <div className='footerImg'>
             <footer>
                 <div className="footer-parent">
-                    <ul className="footer-text">
-                        <li className="text-value">
-                            <Link to="#">About us</Link>
-                        </li>
-                        <li className="text-value">
-                            <Link to="#">ios App</Link>
-                        </li>
-                        <li className="text-value">
-                            <Link to="#">Android App</Link>
-                        </li>
-                    </ul>
-                    
                     <ul className="social-link">
                         <li>
                             <Link to="https://www.facebook.com/foodyy.chaachaa">

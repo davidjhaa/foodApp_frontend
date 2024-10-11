@@ -1,9 +1,3 @@
-.reviewImg{
-    background-image: url('../Images/foodiesfeed.com_pizza-ready-for-baking.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
 .reviewCard{
     background:  rgba(0, 0, 0, 0.699);
     padding: 45px 0;
@@ -19,7 +13,6 @@
     width: 23vw;
     margin: 50px 0;
     padding: 2rem 1.5rem;
-    /* margin-right: 1.5rem; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -34,7 +27,7 @@
     transform: scale(1.05);
 }
 .rimage{
-    height: 25%;
+    height: 50%;
     width: 20%;
     margin-bottom: 0;
     display: flex;
@@ -54,9 +47,7 @@
 .rsummary{
     height: 45%;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
+    text-align: center;
 }
 .frate{
     height: 6%;
@@ -69,6 +60,7 @@
     max-height: 100%;
     max-width: 100%;
     border-radius: 50%;
+    margin-top: 28px;
 }
 .para{
     height: 100%;
@@ -77,7 +69,7 @@
     color: #6e6e6e;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
 }
 @media only screen and (max-width: 850px) {
     .rDetail{

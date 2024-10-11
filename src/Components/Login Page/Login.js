@@ -18,7 +18,7 @@ function Login() {
         <div className="container-grey">
             <div className="form-container">
                 <div className='h1Box'>
-                    <h1 className='h1'>LOGIN</h1>
+                    <h1 className='h1' styles={{color:'black'}}>LOGIN</h1>
                     <div className="line"></div>
                 </div>
 

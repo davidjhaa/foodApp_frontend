@@ -11,7 +11,6 @@ function Plans() {
     const top3 = async () =>{
         try {
             const response = await axios.get(`${apiUrl}/plans/top3`);
-            console.log(response);
             arrset(response.data.plans);
             
         } catch (err) {

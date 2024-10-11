@@ -10,10 +10,11 @@ import '../Styles/home.css'
 import { useNavigate } from 'react-router-dom';
 
 function Home() {
-    const history = useNavigate();
+    const navigate = useNavigate();
     return (
         <>
-            <div className="bgImageCard">
+        <div className="bgImageCard">
+            <div>
                 <div className='introCard'>
                     <div className="iCard">
                         <div className="headerBox">
@@ -27,7 +28,7 @@ function Home() {
                         </div>
                         
                         <div className="btnBox">
-                            <button className="bookNowBtn btn" onClick={()=>{history.push('/allPlans')}}> Book Now</button>
+                            <button className="bookNowBtn btn" onClick={()=>{navigate('/allPlans')}}> Book Now</button>
                             <button className="showMoreBtn btn">Show Me More</button>
                         </div>
                     </div>
@@ -97,19 +98,19 @@ function Home() {
                         <div className="stepsBox">
                             <div className="num"> 1 </div>
                             <div className="steps">
-                                <p className="para">Choose the subscription plan that best fits your needs and sign up today.</p>
+                                <p className="para1">Choose the subscription plan that best fits your needs and sign up today.</p>
                             </div>
                         </div>
                         <div className="stepsBox">
                             <div className="num"> 2 </div>
                             <div className="steps">
-                                <p className="para">Order your delicious meal using our mobile app or website. Or you can even call us!</p>
+                                <p className="para1">Order your delicious meal using our mobile app or website. Or you can even call us!</p>
                             </div>
                         </div>
                         <div className="stepsBox">
                             <div className="num"> 3 </div>
                             <div className="steps">
-                                <p className="para">Enjoy your meal after less than 20 minutes. See you the next time!</p>
+                                <p className="para1">Enjoy your meal after less than 20 minutes. See you the next time!</p>
                             </div>
                         </div>
                     </div>
@@ -118,6 +119,7 @@ function Home() {
             <Review />
             <Plans />
             <Contact />
+        </div>
         </>
     )
 }

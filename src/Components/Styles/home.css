@@ -1,14 +1,17 @@
 .bgImageCard {
-    height: 100vh;
-    background-image: url('../Images/foodiesfeed.com_pizza-ready-for-baking.jpg');
+    min-height: 100vh;
+    background-image: url('../Images/logo.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed; 
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .introCard {
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.849))
 }
 
 .iCard {
@@ -20,7 +23,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* background-color: aqua; */
 }
 
 .headerBox {
@@ -37,7 +39,6 @@
     height: 50%;
     width: 100%;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
 }
 
@@ -62,7 +63,6 @@
     letter-spacing: 2px;
     margin-top: 0;
     margin-bottom: 8px;
-    /* font-weight: 800; */
 }
 
 .btnBox {
@@ -71,7 +71,6 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    /* background-color: rgb(165, 165, 52); */
 }
 
 .btn {
@@ -85,6 +84,7 @@
     font-size: 15px;
     font-weight: 600;
     transition: transform 0.3s, background-color 0.3s;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -100,12 +100,17 @@
 }
 
 .featureCard {
+    background:  rgba(0, 0, 0, 0.699);
+    background-repeat:repeat;
+    background-size: cover;
     width: 100%;
     padding: 30px 0;
 }
 
 .stepsCard {
-    /* height: 90vh; */
+    background:  rgba(0, 0, 0, 0.699);
+    background-repeat:no-repeat;
+    background-size: cover;
     width: 100%;
     padding-bottom: 55px;
 }
@@ -126,8 +131,7 @@
     align-items: flex-end;
     justify-content: center;
     font-size: 38px;
-    color: #6e6e6e;
-    /* background-color: aquamarine; */
+    color: white;
 }
 
 .line {
@@ -148,7 +152,6 @@
     width: 27%;
     margin: 8rem 0;
     padding: 3rem 1.5rem;
-    /* margin-right: 1.5rem; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -175,6 +178,7 @@
 }
 
 .fimg {
+    border-radius: 16px;
     max-height: 100%;
     max-width: 100%;
 }
@@ -198,12 +202,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin: 20px; */
-    /* margin-top: 0; */
-    /* background-color: rgb(86, 84, 199); */
+    
 }
 
-.para {
+.para, .para1 {
     height: 100%;
     font-size: 95%;
     margin: 0;
@@ -211,6 +213,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.para1{
+    color: white;
 }
 
 .sbox1 {
@@ -262,7 +268,6 @@
     padding-left: 20px;
 }
 
-/* http://192.168.29.98:3000 */
 
 @media only screen and (max-width: 850px) {
     .h1Box {
