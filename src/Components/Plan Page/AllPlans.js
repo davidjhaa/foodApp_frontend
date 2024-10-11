@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import '../Styles/allplans.css';
-import Tick from '../Images/check-mark.png'
+import Tick from '../../../src/Images/check-mark.png'
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 const apiUrl = process.env.REACT_APP_API_URL;

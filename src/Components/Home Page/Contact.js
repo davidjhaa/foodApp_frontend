@@ -1,6 +1,6 @@
 import React from 'react';
 import '../Styles/contact.css';
-import Avocado from '../Images/Avocado.mp4';
+import Avocado from '../../Images/Avocado.mp4';
 import { Link } from 'react-router-dom';
 
 function Contact() {

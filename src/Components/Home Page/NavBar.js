@@ -1,15 +1,10 @@
-import React, { useEffect }from "react";
 import { Link } from "react-router-dom";
 import { useAuth } from "../Context/AuthProvider";
 import "../Styles/nav.css";
 
 
 function NavBar() {
-  const { user, setUser, logout } = useAuth();
-
-  useEffect(() => {
-    const storedUser = localStorage.getItem("user");
-  }, [setUser]);
+  const { user, logout } = useAuth();
 
   const handleLogout = async () => {
     try {

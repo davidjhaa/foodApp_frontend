@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Star from '../Images/star.png'
+import Star from '../../Images/star.png'
 import '../Styles/review.css'
 import axios from 'axios';
 import { FaRegCircleUser } from "react-icons/fa6";

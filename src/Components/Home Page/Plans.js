@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import '../Styles/plan.css';
-import Tick from '../Images/check-mark.png'
+import Tick from '../../Images/check-mark.png'
 import axios from 'axios';
 const apiUrl = process.env.REACT_APP_API_URL;
 
